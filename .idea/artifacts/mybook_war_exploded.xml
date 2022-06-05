@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mybook:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/mybook_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mybook" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../资料/图书管理系统-JavaWeb/图书管理系统-JavaWeb/05-jar包/c3p0辅助包/c3p0-0.9.5.5.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../资料/图书管理系统-JavaWeb/图书管理系统-JavaWeb/05-jar包/c3p0辅助包/mchange-commons-java-0.2.19.jar" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="mybook/web/Web" />
+    </root>
+  </artifact>
+</component>

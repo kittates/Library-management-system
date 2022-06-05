@@ -1,0 +1,63 @@
+body {
+    /*在这里可以设置不同的网页背景图片，也可以设置为循环播放的，暂时没实现*/
+    background: url('../Images/login_img/back-img_login.jpg');
+    /*background: url('earth_view_1.jpeg');*/
+    /*background: url('earth_view_2.jpeg');*/
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#login-box {
+    width: 30%;
+    height: auto;
+    margin: 0 40%;
+    margin-top: 10%;
+    /* text-align: center; */
+    background-color:rgba(red, green, blue, 1);
+    /* background: #00000090; */
+    padding: 20px 50px;
+}
+
+#login-box h1 {
+    color: #fff;
+}
+
+#login-box .form .item {
+    margin-top: 15px;
+}
+
+#login-box .form .item i {
+    font-size: 18px;
+    color: #fff;
+}
+
+#login-box .form .item input {
+    width: 180px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 5px 10px;
+    background-color: #ffffff00;
+    color: black;
+}
+
+#login-box .form .button_login {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 3%;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    border: 0;
+    border-radius: 15px;
+    /*在这里可以设置不同Login提交按钮的样式*/
+    /*background: #1abc9c;*/
+    /*background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);*/
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+#login-box .form img {
+    padding-bottom: 0;
+
+}
