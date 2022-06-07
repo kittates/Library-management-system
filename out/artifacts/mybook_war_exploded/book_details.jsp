@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="./Style/skin.css"/>
     <style>
         #content {
-            width: 500px;
+            width: 550px;
             height: 400px;
-            overflow: scroll;
+            /*overflow: scroll;*/
             margin-top: 10px;
             text-indent: 2em;
             line-height: 24px;

@@ -18,8 +18,8 @@
         <td valign="top" background="./Images/content_bg.gif">
 
         </td>
-        <td width="16" valign="top" background="./Images/mail_right_bg.gif"><img src="./Images/nav_right_bg.gif"
-                                                                                 width="16" height="29"/></td>
+        <td width="16" valign="top" background="./Images/mail_right_bg.gif">
+            <img src="./Images/nav_right_bg.gif" width="16" height="29"/></td>
     </tr>
     <!-- 中间部分开始 -->
     <tr>

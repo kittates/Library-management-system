@@ -92,7 +92,9 @@ public class MemberBiz {
     public Member getByIdNumber(String idNumber) {
         Member member = null;
         try {
+            //根据当前的身份编号获取memberId
             member = memberDao.getByIdNumber(idNumber);
+            //通过memberId获取用户的会员类型memberType
             MemberType memberType = typeDao.getById(member.getTypeId());
             member.setType(memberType);
         } catch (SQLException throwables) {

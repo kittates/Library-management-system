@@ -38,8 +38,11 @@
                     <td colspan="4">
                         <table>
                             <tr>
-                                <td width="100" align="center"><img src="./Images/mime.gif"/></td>
-                                <td valign="bottom"><h3 style="letter-spacing:1px;">常用功能 > 借阅历史记录 </h3></td>
+                                <td width="100" align="center">
+                                    <img src="./Images/mime.gif"/></td>
+                                <td valign="bottom">
+                                    <h3 style="letter-spacing:1px;">常用功能 > 借阅历史记录 </h3>
+                                </td>
                             </tr>
                         </table>
                     </td>

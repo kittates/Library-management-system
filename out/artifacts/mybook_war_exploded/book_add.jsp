@@ -68,7 +68,7 @@
                         <table>
                             <tr>
                                 <td width="100" align="center"><img src="./Images/mime.gif"/></td>
-                                <td valign="bottom"><h3 style="letter-spacing:1px;">书籍管理 > 添加书籍</h3></td>
+                                <td valign="bottom"><h3 style="letter-spacing:1px;">添加书籍</h3></td>
                             </tr>
                         </table>
                     </td>
@@ -99,10 +99,14 @@
                                                 <td width="25%"><input class="text" type="text" name="name" value=""
                                                                        required/></td>
                                                 <td rowspan="7" valign="top">
-                                                    <fieldset style="width: 120px; height: 200px;">
+<%--                                                    <fieldset style="width: 120px; height: 200px;">--%>
+<%--                                                        <legend>图片预览</legend>--%>
+<%--                                                        <img id="imgPic" src="#" width="400px" height="200px"/>--%>
+<%--                                                    </fieldset>--%>
+                                                    <div style="width: 120px; height: 200px;">
                                                         <legend>图片预览</legend>
-                                                        <img id="imgPic" src="#" width="400px" height="200px"/>
-                                                    </fieldset>
+                                                        <img id="imgPic" src="Images/cover/book_background.jpg" width="500px" height="350px"/>
+                                                    </div>
                                                 </td>
                                                 <td width="2%">&nbsp;</td>
                                             </tr>

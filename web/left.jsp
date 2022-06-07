@@ -9,6 +9,7 @@
     <script src="./Js/moo.fx.js" type="text/javascript"></script>
     <script src="./Js/moo.fx.pack.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="./Style/skin.css"/>
+    <link rel="stylesheet" href="./Style/buttons.css">
     <script type="text/javascript">
         window.onload = function () {
             var contents = document.getElementsByClassName('content');
@@ -26,6 +27,7 @@
             }
         }
     </script>
+
 </head>
 
 <body>
@@ -71,7 +73,7 @@
                         <li><a href="./type_list.jsp" target="main">类型列表</a></li>
                     </ul>
                 </div>
-                <h1 class="type"><a href="javascript:void(0)">常用操作</a></h1>
+                <h1 class="type"><a href="javascript:void(0)">借阅操作</a></h1>
                 <div class="content">
                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
@@ -119,8 +121,12 @@
 <%--                </div>--%>
                 <!-- *********** -->
             </div>
+
         </td>
     </tr>
+
+
 </table>
+
 </body>
 </html>

@@ -20,7 +20,7 @@
 <table cellpadding="0" width="100%" height="40" bgcolor="#737c7b">
     <tr valign="top">
         <td width="70%"><a href="javascript:void(0)"></a></td>
-        <td width="30%" style="padding-top:13px;padding-left: 330px;font:15px Arial,SimSun,sans-serif;color:#FFF">
+        <td width="30%" style="padding-top:13px;padding-left: 200px;font:15px Arial,SimSun,sans-serif;color:#FFF">
             当前用户:&nbsp;&nbsp;<b>${user.name}</b>&nbsp;
            
 
