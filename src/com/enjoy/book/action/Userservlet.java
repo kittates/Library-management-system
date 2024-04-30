@@ -89,38 +89,65 @@ public class Userservlet extends HttpServlet {
                 break;
 
             case "modifyPwd":
+                //验证用户是否登录
+                if (session.getAttribute("user") == null) {
+                    out.println("<script>alert('请登录');parent.window.location.href='login.html';</script>");
+                    return;
+                }
+
                 //修改密码
-                //1、获取用户输入的新密码
-                String oldPwd = req.getParameter("pwd");
+                //1.获取用户输入的新的密码
                 String newPwd = req.getParameter("newpwd");
                 String newPwd2 = req.getParameter("newpwd2");
-                String oldPwdSql = ((User)session.getAttribute("user")).getPwd();
+//                if(newPwd!=newPwd2){
+//                    out.println("<script>alert('两次密码输入错误');parent.window.location.href='set_pwd.jsp';</script>");
+//                }
+//                else{
+                    //2.获取用户的编号-session
+                    long id = ((User) session.getAttribute("user")).getId();
 
-                //输入的旧密码不正确 或者 新输入的两次密码不相同 --> 修改失败
-                if(oldPwd!=oldPwdSql){
-                    out.println("<script>alert('原密码输入错误');parent.window.location.href = 'index.jsp';</script>");
-                }
-                else if(newPwd!=newPwd2){
-                    out.println("<script>alert('两次密码输入不同');parent.window.location.href = 'index.jsp';</script>");
-                }
-                else{
-                    //2、获取用户的编号 session
-                    long id = ((User)session.getAttribute("user")).getId();
-
-                    //3、调用biz层方法
-                    int count = userBiz.modifyPwd(id,newPwd);
-
-                    //4、响应-参考exit
-                    //密码成功修改后需要退出重新登录
-                    if(count>0){
-                        out.print("<script>alert('密码修改成功');parent.window.location.href = 'login.html';</script>");
+                    //3.调用biz层方法
+                    int count = userBiz.modifyPwd(id, newPwd);
+                    //4.响应-参考exit
+                    if (count > 0) {
+                        out.println("<script>alert('密码修改成功');parent.window.location.href='login.html';</script>");
+                    } else {
+                        out.println("<script>alert('密码修改失败');parent.window.location.href='login.html';</script>");
                     }
-                    else{
-                        out.println("<script>alert('密码修改失败');parent.window.location.href = 'index.jsp';</script>");
-                    }
-                }
+//                }
 
+                break;
 
+//                //修改密码
+//                //1、获取用户输入的新密码
+//                String oldPwd = req.getParameter("pwd");
+//                String newPwd = req.getParameter("newpwd");
+//                String newPwd2 = req.getParameter("newpwd2");
+//                String oldPwdSql = ((User)session.getAttribute("user")).getPwd();
+//
+//                //输入的旧密码不正确 或者 新输入的两次密码不相同 --> 修改失败
+//                if(oldPwd!=oldPwdSql){
+//                    out.println("<script>alert('原密码输入错误');parent.window.location.href = 'index.jsp';</script>");
+//                }
+//                else if(newPwd!=newPwd2){
+//                    out.println("<script>alert('两次密码输入不同');parent.window.location.href = 'index.jsp';</script>");
+//                }
+//                else{
+//                    //2、获取用户的编号 session
+//                    long id = ((User)session.getAttribute("user")).getId();
+//
+//                    //3、调用biz层方法
+//                    int count = userBiz.modifyPwd(id,newPwd);
+//
+//                    //4、响应-参考exit
+//                    //密码成功修改后需要退出重新登录
+//                    if(count>0){
+//                        out.print("<script>alert('密码修改成功');parent.window.location.href = 'login.html';</script>");
+//                    }
+//                    else{
+//                        out.println("<script>alert('密码修改失败');parent.window.location.href = 'index.jsp';</script>");
+//                    }
+//                }
         }
 
     }

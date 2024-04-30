@@ -25,10 +25,10 @@ body {
 #login-box .form .item {
     margin-top: 15px;
 }
-#login-box .form {
-    display: block;
-    text-align: center;
-}
+/*#login-box .form {*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*}*/
 #login-box .form .item i {
     font-size: 18px;
     color: #fff;

@@ -78,15 +78,15 @@
                                 <td colspan="2">
                                     <form action="user.let?type=modifyPwd" method="post">
                                         <table width="100%" class="cont">
-                                            <tr>
-<%--                                                <td width="2%">&nbsp;</td>--%>
-                                                <td width="80px">原密码：</td>
-                                                <td width="150px">
-                                                    <input class="text" type="password" name="pwd" required/>
-                                                </td>
-                                                <td class="err">*原密码不匹配</td>
-<%--                                                <td width="2%">&nbsp;</td>--%>
-                                            </tr>
+<%--                                            <tr>--%>
+<%--&lt;%&ndash;                                                <td width="2%">&nbsp;</td>&ndash;%&gt;--%>
+<%--                                                <td width="80px">原密码：</td>--%>
+<%--                                                <td width="150px">--%>
+<%--                                                    <input class="text" type="password" name="pwd" required/>--%>
+<%--                                                </td>--%>
+<%--                                                <td class="err">*原密码不匹配</td>--%>
+<%--&lt;%&ndash;                                                <td width="2%">&nbsp;</td>&ndash;%&gt;--%>
+<%--                                            </tr>--%>
                                             <tr>
 <%--                                                <td width="2%">&nbsp;</td>--%>
                                                 <td width="80px"> 新密码：</td>
@@ -96,15 +96,15 @@
                                                 <td></td>
 <%--                                                <td width="2%">&nbsp;</td>--%>
                                             </tr>
-                                            <tr>
-<%--                                                <td width="2%">&nbsp;</td>--%>
-                                                <td width="80px">确认密码：</td>
-                                                <td width="150px">
-                                                    <input class="text" type="password" id="newpwd2" name="newpwd2" required/>
-                                                </td>
-                                                <td id="newpwd2_err" class="err">两次密码不相同</td>
-<%--                                                <td width="2%">&nbsp;</td>--%>
-                                            </tr>
+<%--                                            <tr>--%>
+<%--&lt;%&ndash;                                                <td width="2%">&nbsp;</td>&ndash;%&gt;--%>
+<%--                                                <td width="80px">确认密码：</td>--%>
+<%--                                                <td width="150px">--%>
+<%--                                                    <input class="text" type="password" id="newpwd2" name="newpwd2" required/>--%>
+<%--                                                </td>--%>
+<%--                                                <td id="newpwd2_err" class="err">两次密码不相同</td>--%>
+<%--&lt;%&ndash;                                                <td width="2%">&nbsp;</td>&ndash;%&gt;--%>
+<%--                                            </tr>--%>
                                             <tr>
 <%--                                                <td width="2%">&nbsp;</td>--%>
                                                 <td width="80px"></td>
