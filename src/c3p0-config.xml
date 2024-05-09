@@ -23,7 +23,7 @@
         <!--mysql的用户名-->
         <property name="user">root</property>
         <!--我的mysql的密码:根据自己机器进行修改-->
-        <property name="password">wangzhe2412</property>
+        <property name="password">Your Mysql password</property>
         <!--连接池初始化时创建的连接数:10-->
         <property name="initialPoolSize">10</property>
         <!--maxIdleTime：连接的最大空闲时间，如果超过这个时间，某个数据库连接还没有被使用，则会断开掉这个连接。-->
